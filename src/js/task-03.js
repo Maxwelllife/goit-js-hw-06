@@ -21,10 +21,14 @@ const imageEl = images.map((image) => {
 
 ulRef.insertAdjacentHTML("afterbegin", string);
 
-ulRef.style.display = "flex";
-const items = ulRef.childNodes;
-items.forEach((item) => {
-  item.style.flexBasis = "calc((100%-40px)/3)";
-  item.style.margin = "20px";
-  item.style.listStyleType = "none";
-});
+// ulRef.style.display = "flex";
+// const items = ulRef.childNodes;
+// items.forEach((item) => {
+//   item.style.flexBasis = "calc((100%-40px)/3)";
+//   item.style.margin = "20px";
+//   item.style.listStyleType = "none";
+// });
+// const img = document.querySelectorAll(".image");
+// img.forEach((el) => {
+//   el.style.backgroundSize = "contain";
+// });
