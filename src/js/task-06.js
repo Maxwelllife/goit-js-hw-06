@@ -2,12 +2,12 @@ const refs = {
   input: document.querySelector("#validation-input"),
   dataLength: +document.querySelector("#validation-input").dataset.length,
 };
-console.log(this);
-refs.input.addEventListener("blur", (event) =>
-  onInputLoozeBlur(event.currentTarget.value.length)
+
+refs.input.addEventListener("blur", (parametr) =>
+  onInputLoseBlur(parametr.currentTarget.value.length)
 );
 
-function onInputLoozeBlur(event) {
+function onInputLoseBlur(event) {
   refs.input.className = event === refs.dataLength ? "valid" : "invalid";
 }
 
