@@ -5,7 +5,7 @@ const refs = {
   incrementButton: document.querySelector('[data-action="increment"]'),
   span: document.querySelector("#value"),
 };
-console.log(refs.span);
+// console.log(refs.span);
 refs.decrementButton.addEventListener("click", onDecButtonClick);
 
 function onDecButtonClick() {
