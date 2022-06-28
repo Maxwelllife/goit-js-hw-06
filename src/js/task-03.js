@@ -13,22 +13,10 @@ const images = [
   },
 ];
 const ulRef = document.querySelector(".gallery");
-// console.log(ulRef);
+
 let string = "";
 const imageEl = images.map((image) => {
-  string += `<li class = "list__item"><img class = "image" width = "250" src = "${image.url}" alt = "${image.alt}"></li>`;
+  string += `<li class ="list__item"><img class = "image" width = "250" src = "${image.url}" alt = "${image.alt}"></li>`;
 });
 
 ulRef.insertAdjacentHTML("afterbegin", string);
-
-// ulRef.style.display = "flex";
-// const items = ulRef.childNodes;
-// items.forEach((item) => {
-//   item.style.flexBasis = "calc((100%-40px)/3)";
-//   item.style.margin = "20px";
-//   item.style.listStyleType = "none";
-// });
-// const img = document.querySelectorAll(".image");
-// img.forEach((el) => {
-//   el.style.backgroundSize = "contain";
-// });

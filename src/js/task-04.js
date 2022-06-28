@@ -5,7 +5,7 @@ const refs = {
   incrementButton: document.querySelector('[data-action="increment"]'),
   span: document.querySelector("#value"),
 };
-// console.log(refs.span);
+
 refs.decrementButton.addEventListener("click", onDecButtonClick);
 
 function onDecButtonClick() {
@@ -14,6 +14,5 @@ function onDecButtonClick() {
 refs.incrementButton.addEventListener("click", onInkButtonClick);
 
 function onInkButtonClick() {
-  value.innerHTML = counterValue += 1; // так теж працює...
-  //   refs.span.textContent = counterValue += 1;
+  value.innerHTML = counterValue += 1;
 }

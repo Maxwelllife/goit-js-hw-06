@@ -11,4 +11,4 @@ function onInputLoseBlur(event) {
   refs.input.className = event === refs.dataLength ? "valid" : "invalid";
 }
 
-// як зробити в 3му рядку через this я не придумав поки що...
+// в 3му рядку  this  не може бути
