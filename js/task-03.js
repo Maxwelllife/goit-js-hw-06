@@ -16,7 +16,17 @@ const ulRef = document.querySelector(".gallery");
 
 let string = "";
 const imageEl = images.map((image) => {
-  string += `<li class ="list__item"><img class = "image" width = "250" src = "${image.url}" alt = "${image.alt}"></li>`;
+  return `<li class ="list__item"><img class = "image" width = "250" src = "${image.url}" alt = "${image.alt}"></li>`;
 });
 
-ulRef.insertAdjacentHTML("afterbegin", string);
+ulRef.insertAdjacentHTML("afterbegin", imageEl.join(""));
+
+//-------------first variant--------------
+// const ulRef = document.querySelector(".gallery");
+
+// let string = "";
+// const imageEl = images.map((image) => {
+//   string += `<li class ="list__item"><img class = "image" width = "250" src = "${image.url}" alt = "${image.alt}"></li>`;
+// });
+
+// ulRef.insertAdjacentHTML("afterbegin", string);
