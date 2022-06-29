@@ -10,6 +10,7 @@ console.log(document.body);
 button.addEventListener("click", onBodyChangeColor);
 
 function onBodyChangeColor() {
-  document.body.style.backgroundColor = getRandomHexColor();
-  spanColor.innerHTML = getRandomHexColor();
+  const rundomColor = getRandomHexColor();
+  document.body.style.backgroundColor = rundomColor;
+  spanColor.innerHTML = rundomColor;
 }
